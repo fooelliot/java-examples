@@ -5,6 +5,8 @@ import com.andy.model.product.ProductService;
 import com.andy.model.user.Entity;
 import com.andy.model.user.UserService;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.Optional;
 
@@ -13,6 +15,8 @@ import java.util.Optional;
  * @CreateBy: 2018-07-13 22:53
  **/
 public class ProductServiceImpl implements ProductService {
+
+    private final Path dataPath = Paths.get(".");
 
     UserService userService = new UserService();
 

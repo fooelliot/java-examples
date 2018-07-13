@@ -2,25 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <packaging>pom</packaging>
-    <modules>
-        <module>java-9-user</module>
-        <module>java-9-service</module>
-        <module>java-9-order</module>
-        <module>java-9-product</module>
-        <module>java-9-base</module>
-    </modules>
-
-    <artifactId>java-9</artifactId>
-
     <parent>
-        <artifactId>java-examples</artifactId>
+        <artifactId>java-9</artifactId>
         <groupId>com.andy.java</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>java-9-base</artifactId>
 
 
 </project>
