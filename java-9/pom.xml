@@ -9,6 +9,7 @@
         <module>java-9-user</module>
         <module>java-9-service</module>
         <module>java-9-order</module>
+        <module>java-9-product</module>
     </modules>
 
     <artifactId>java-9</artifactId>
