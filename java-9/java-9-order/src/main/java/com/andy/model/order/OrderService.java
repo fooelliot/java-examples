@@ -1,21 +1,25 @@
 package com.andy.model.order;
 
+import com.andy.model.user.Entity;
 import com.andy.model.user.UserService;
+
+import java.util.List;
+import java.util.Optional;
 
 /**
  * @Author: Mr.lyon
  * @CreateBy: 2018-07-13 22:31
  **/
-public class OrderService {
+public interface OrderService {
 
-    UserService userService = new UserService();
+    UserService getUser();
 
-    public UserService getUser() {
-        return userService;
-    }
+    <T extends Entity> List<T> list(Class<T> type) throws OrderException;
 
-    public void sayHello() {
-        System.out.println("hello world");
-    }
+    <T extends Entity> Optional<T> get(Class<T> type) throws OrderException;
+
+    void save(Entity entity) throws OrderException;
+
+    <T extends Entity> void delete(Class<T> type, String id);
 
 }
