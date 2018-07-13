@@ -1,3 +1,3 @@
 module com.andy.model.service {
-    requires com.andy.model.user;
+    requires com.andy.model.order;
 }
