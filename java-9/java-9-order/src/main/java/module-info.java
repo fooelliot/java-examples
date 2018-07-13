@@ -1,4 +1,4 @@
 module com.andy.model.order {
     exports com.andy.model.order;
-    requires com.andy.model.user;
+    requires transitive com.andy.model.user;
 }

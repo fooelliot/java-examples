@@ -11,8 +11,7 @@ public class App {
     OrderService orderService = new OrderService();
 
     public void app() {
-        System.out.println("hello app");
-        orderService.sayHello();
+        orderService.getUser().sayHello();
     }
 
 

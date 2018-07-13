@@ -10,10 +10,12 @@ public class OrderService {
 
     UserService userService = new UserService();
 
-    public void sayHello() {
-        System.out.println("hello order service");
-        userService.sayHello();
+    public UserService getUser() {
+        return userService;
     }
 
+    public void sayHello() {
+        System.out.println("hello world");
+    }
 
 }
