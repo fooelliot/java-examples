@@ -13,7 +13,7 @@ import java.net.URI;
 public class Http2Examples {
 
     public static void main(String[] args) throws Exception {
-        test1();
+        test2();
     }
 
     public static void test1() throws Exception {
@@ -24,6 +24,18 @@ public class Http2Examples {
         int code = httpResponse.statusCode();
         System.out.println(code);
         System.out.println(httpResponse.body().toString());
+    }
+
+    public static void test2() throws Exception {
+
+        HttpClient client = HttpClient.newHttpClient();
+
+        HttpRequest req = HttpRequest.newBuilder(URI.create("http://www.baidu.com"))
+                        .header("User-Agent","Java")
+                        .GET()
+                        .build();
+        HttpResponse<String> resp = client.send(req, HttpResponse.BodyHandler.asString());
+        System.out.println(resp.body());
     }
 
 }

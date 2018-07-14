@@ -3,7 +3,7 @@ package com.andy.collection;
 import java.util.Set;
 
 /**
- * java9新特性
+ * java9新特性集合工厂方法
  * @Author: Mr.lyon
  * @CreateBy: 2018-07-14 09:36
  **/
