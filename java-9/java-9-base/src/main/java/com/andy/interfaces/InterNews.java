@@ -8,13 +8,21 @@ package com.andy.interfaces;
  **/
 public interface InterNews {
 
+    String name = "hello";
+
     void sayHello();
 
+    //java8
+    static void staticMethod() {
+        System.out.println("static method");
+    }
+
+    //java8
     default void defaultMethod() {
         init();
     }
 
-    // This method is not part of the public API exposed by MyInterface
+    //java9 This method is not part of the public API exposed by MyInterface
     private void init() {
         System.out.println("Initializing");
     }
