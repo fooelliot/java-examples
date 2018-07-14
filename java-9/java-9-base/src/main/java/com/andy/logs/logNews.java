@@ -3,9 +3,7 @@ package com.andy.logs;
 import java.util.Currency;
 import java.util.Set;
 
-import static java.lang.System.Logger.Level.ERROR;
-import static java.lang.System.Logger.Level.INFO;
-import static java.lang.System.Logger.Level.TRACE;
+import static java.lang.System.Logger.Level.*;
 
 /**
  * @Author: Mr.lyon
@@ -13,7 +11,8 @@ import static java.lang.System.Logger.Level.TRACE;
  **/
 public class logNews {
 
-    private static final System.Logger logger = System.getLogger("Log4jLogger");
+//    private static final System.Logger logger = System.getLogger("Log4jLogger");
+    private static final System.Logger logger = System.getLogger("Main");
 
     public static void main(String[] args) {
 
